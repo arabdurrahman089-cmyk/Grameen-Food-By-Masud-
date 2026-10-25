@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #1b4d3e;
+    --primary-dark: #13382c;
+    --primary-light: #237651;
+    --gold: #d97706;
+    --cream: #fbf9f4;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', 'Noto Sans Bengali', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8faf8;
+    color: #1f2937;
+  }
+}
+
+/* Custom Grameen theme classes */
+.bg-grameen-dark { background-color: #13382c; }
+.bg-grameen { background-color: #1b4d3e; }
+.bg-grameen-light { background-color: #237651; }
+.text-grameen { color: #1b4d3e; }
+.border-grameen { border-color: #1b4d3e; }
+
+.bg-gold-accent { background-color: #d97706; }
+.text-gold-accent { color: #d97706; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
