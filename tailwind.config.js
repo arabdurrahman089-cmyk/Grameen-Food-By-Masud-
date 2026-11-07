@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -12,13 +13,21 @@ export default {
           100: '#dcf0e5',
           200: '#bbe1ce',
           300: '#8dcbad',
-          400: '#5aaE86',
+          400: '#5aae86',
           500: '#349366',
           600: '#237651',
           700: '#1c5e42',
-          800: '#1b4d3e', // primary deep forest green
-          900: '#13382c',
-          950: '#0a2019',
+          800: '#1b4d3e', // Deep village forest green
+          900: '#153f34',
+          950: '#0a231d',
+        },
+        cream: {
+          50: '#fdfcf9',
+          100: '#faf7f2',
+          200: '#f4ede2',
+          300: '#ecdecb',
+          400: '#dec4a7',
+          500: '#d0aa85',
         },
         gold: {
           50: '#fffbeb',
@@ -27,20 +36,16 @@ export default {
           300: '#fcd34d',
           400: '#fbbf24',
           500: '#f59e0b',
-          600: '#d97706', // warm mustard golden
+          600: '#d97706',
           700: '#b45309',
-        },
-        cream: {
-          50: '#fdfbf7',
-          100: '#f7f3ec',
-          200: '#eee5d8',
-          300: '#e1d2bf',
+          800: '#92400e',
+          900: '#78350f',
         }
       },
       fontFamily: {
-        bengali: ['"Hind Siliguri"', '"Noto Sans Bengali"', 'system-ui', 'sans-serif'],
-      }
+        bengali: ['"Hind Siliguri"', 'system-ui', 'sans-serif'],
+      },
     },
   },
   plugins: [],
-}
+};
